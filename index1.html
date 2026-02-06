@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cursor – AI Code Editor</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0b0b0d;color:#fff}
+.container{width:1200px;margin:auto}
+
+/* NAV */
+nav{background:#0b0b0d;
+    border-bottom:1px solid #1c1c1f}
+.nav-inner{display:flex;align-items:center;
+           justify-content:space-between;
+           padding:22px 0}
+.logo{font-weight:800;
+      font-size:20px;
+      letter-spacing:1px}
+.nav-links a{color:#cfcfcf;
+             text-decoration:none;
+             margin:0 16px;font-size:14px}
+.nav-actions a{margin-left:14px;
+               text-decoration:none}
+.btn-primary{background:#fff;
+            color:#000; 
+            padding:8px 18px;
+            border-radius:20px;
+            font-size:13px;
+            font-weight:600}
+
+/* HERO */
+.hero{padding:120px 0 80px}
+.hero-grid{display:grid;
+           grid-template-columns:1fr 1fr;
+           gap:60px;
+           align-items:center}
+.hero h1{font-size:44px;
+        line-height:1.2;
+        font-weight:800}
+.hero p{margin-top:20px;
+        font-size:17px;
+        color:#cfcfcf;
+        max-width:480px}
+.hero .cta{margin-top:28px}
+.hero img{width:100%;
+          border-radius:14px;
+          border:1px solid #1f1f24}
+
+/* LOGOS */
+.logos{padding:60px 0;
+    border-top:1px solid #1c1c1f;
+    border-bottom:1px solid #1c1c1f}
+.logo-row{display:flex;
+    justify-content:space-between;
+    opacity:0.7}
+.logo-row img{height:28px}
+
+/* FEATURES */
+.features{padding:120px 0}
+.feature-block{display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;align-items:center;
+    margin-bottom:120px}
+.feature-block h2{font-size:32px;
+    margin-bottom:14px}
+.feature-block p{color:#cfcfcf;
+    font-size:16px;
+    line-height:1.6}
+.feature-block img{width:100%;
+    border-radius:12px;
+    border:1px solid #1f1f24}
+
+/* CARDS */
+.cards{padding:120px 0;
+    background:#0f0f13}
+.cards h2{text-align:center;
+    font-size:36px;
+    margin-bottom:60px}
+.card-grid{display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px}
+.card{background:#141418;
+    border:1px solid #222;
+    border-radius:14px;
+    padding:26px}
+.card h3{margin-bottom:10px}
+.card p{color:#cfcfcf;
+    font-size:14px;
+    line-height:1.5}
+
+/* TESTIMONIALS */
+.testimonials{padding:120px 0}
+.test-grid{display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px}
+.quote{background:#141418;
+    border:1px solid #222;
+    border-radius:14px;
+    padding:30px}
+.quote p{font-size:15px;
+    line-height:1.6;
+    color:#e6e6e6}
+.quote .author{margin-top:18px;
+    ont-size:13px;
+    color:#aaa}
+
+/* USE CASES */
+.usecases{padding:120px 0;
+    background:#0f0f13}
+.use-grid{display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px}
+.use-card{background:#141418;
+    border-radius:14px;
+    overflow:hidden;
+    border:1px solid #222}
+.use-card img{width:100%;
+    height:180px;
+    object-fit:cover}
+.use-card div{padding:18px}
+
+/* CHANGELOG */
+.changelog{padding:120px 0}
+.log-list{max-width:700px}
+.log-item{padding:18px 0;
+    border-bottom:1px solid #1f1f24}
+.log-date{font-size:12px;
+    color:#888}
+
+/* TEAM */
+.team{padding:120px 0;
+    background:#0f0f13}
+.team-grid{display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center}
+.team img{width:100%;
+    border-radius:14px}
+
+/* FINAL CTA */
+.final-cta{padding:120px 0;
+    text-align:center}
+.final-cta h2{font-size:42px;
+    margin-bottom:24px}
+
+/* FOOTER */
+footer{background:#0b0b0d;
+    border-top:1px solid #1c1c1f;
+    padding:80px 0}
+.footer-grid{display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:40px}
+footer h4{margin-bottom:14px}
+footer a{display:block;
+    color:#aaa;
+    text-decoration:none;
+    font-size:13px;
+    margin-bottom:8px}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">CURSOR</div>
+    <div class="nav-links">
+      <a href="#">Features</a>
+      <a href="#">Enterprise</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources</a>
+    </div>
+    <div class="nav-actions">
+      <a href="#">Sign in</a>
+      <a href="#" class="btn-primary">Download</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <h1>Built to make you extraordinarily productive, Cursor is the best way to code with AI.</h1>
+      <p>AI-powered code editor designed for speed, clarity and deep developer focus.</p>
+      <div class="cta"><a class="btn-primary" href="#">Download for macOS</a></div>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
+  </div>
+</section>
+
+<section class="logos">
+  <div class="container logo-row">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo_TV_2015.png">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Slack_icon_2019.svg">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/GitHub_Mark.png">
+  </div>
+</section>
+
+<section class="features container">
+  <div class="feature-block">
+    <div>
+      <h2>AI Pair Programming</h2>
+      <p>Write, refactor and debug with AI directly in your editor. No context switching.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80">
+  </div>
+
+  <div class="feature-block">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
+    <div>
+      <h2>Deep Code Understanding</h2>
+      <p>Cursor understands your full codebase, not just files.</p>
+    </div>
+  </div>
+
+  <div class="feature-block">
+    <div>
+      <h2>Built for Developers</h2>
+      <p>Fast, minimal, and distraction-free interface designed for productivity.</p>
+    </div>
+    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?auto=format&fit=crop&w=1200&q=80">
+  </div>
+</section>
+
+<section class="cards">
+  <div class="container">
+    <h2>Why Developers Love Cursor</h2>
+    <div class="card-grid">
+      <div class="card"><h3>Fast</h3><p>Optimized for speed and focus.</p></div>
+      <div class="card"><h3>Accurate</h3><p>Context-aware AI responses.</p></div>
+      <div class="card"><h3>Secure</h3><p>Privacy-first design.</p></div>
+      <div class="card"><h3>Modern</h3><p>Clean UI for developers.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials container">
+  <div class="test-grid">
+    <div class="quote"><p>"Cursor changed how I code every day."</p><div class="author">Alex — Software Engineer</div></div>
+    <div class="quote"><p>"The best AI dev tool I've ever used."</p><div class="author">Maya — Startup Founder</div></div>
+    <div class="quote"><p>"Feels like coding in the future."</p><div class="author">John — Full Stack Dev</div></div>
+  </div>
+</section>
+
+<section class="usecases">
+  <div class="container use-grid">
+    <div class="use-card"><img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"><div>Startup Teams</div></div>
+    <div class="use-card"><img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"><div>Open Source</div></div>
+    <div class="use-card"><img src="https://images.unsplash.com/photo-1531482615713-2afd69097998"><div>Enterprises</div></div>
+  </div>
+</section>
+
+<section class="changelog container">
+  <div class="log-list">
+    <div class="log-item"><div class="log-date">Jan 2026</div>New AI model integration</div>
+    <div class="log-item"><div class="log-date">Dec 2025</div>Performance improvements</div>
+    <div class="log-item"><div class="log-date">Nov 2025</div>UI redesign</div>
+  </div>
+</section>
+
+<section class="team">
+  <div class="container team-grid">
+    <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1200&q=80">
+    <div>
+      <h2>Built by developers, for developers</h2>
+      <p style="margin:18px 0;color:#cfcfcf">A small team focused on building the best AI coding experience.</p>
+      <a class="btn-primary" href="#">Join Us</a>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <h2>Start coding faster with AI</h2>
+  <a class="btn-primary" href="#">Download Cursor</a>
+</section>
+
+<footer>
+  <div class="container footer-grid">
+    <div>
+      <h4>Product</h4>
+      <a href="#">Features</a><a href="#">Pricing</a><a href="#">Download</a>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <a href="#">Docs</a><a href="#">Community</a><a href="#">Support</a>
+    </div>
+    <div>
+      <h4>Legal</h4>
+      <a href="#">Privacy</a><a href="#">Terms</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
